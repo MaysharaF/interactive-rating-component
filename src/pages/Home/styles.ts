@@ -7,6 +7,7 @@ export const Container = styled.div`
   justify-content: center;
   width: 100%;
   height: 100%;
+  padding: 1.5rem;
 `;
 
 export const CardRating = styled.div`
@@ -21,6 +22,11 @@ export const CardRating = styled.div`
   
   font-feature-settings: 'clig' off, 'liga' off;
 
+  @media (width: 375px) {
+    padding: 1.5rem;
+    width: 20.4375rem;
+    height: 22.5rem;
+  }
 `;
 
 export const TextContent = styled.div`
@@ -41,6 +47,17 @@ export const TextContent = styled.div`
     line-height: 1.5rem;
     font-style: normal;
   }
+
+  @media (width: 375px) {
+    h2{
+      font-size: 1.5rem;
+    }
+
+    p {
+      font-size: .75rem;
+      line-height: 1.375rem;
+    }
+  }
 `
 
 const CircleCSS = css`
@@ -51,6 +68,11 @@ const CircleCSS = css`
   height: 3.1875rem;
   background-color: var(--dark-blue);
   border-radius: 100%;
+
+  @media (width: 375px) {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
 `
 
 export const CircleIcon = styled.div`

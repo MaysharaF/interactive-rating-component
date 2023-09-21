@@ -15,6 +15,10 @@ import {
 const Home: React.FC = () => {
   const [selectedRate, setSelectedRate] = useState<number | null>(null);
 
+  const handleSubmit = () => {
+    console.log(selectedRate);
+  };
+
   return (
     <Container>
       <CardRating>
@@ -26,8 +30,10 @@ const Home: React.FC = () => {
           <h2>How did we do?</h2>
 
           <p>
-            Please let us know how we did with your support <br /> request. All
-            feedback is appreciated to help us <br /> improve our offering!
+            Please let us know how we did with your support
+            <br />
+            request. All feedback is appreciated to help us <br /> improve our
+            offering!
           </p>
         </TextContent>
 
@@ -42,7 +48,7 @@ const Home: React.FC = () => {
             </CircleRate>
           ))}
         </RateSelectContent>
-        <Button>SUBMIT</Button>
+        <Button onClick={() => handleSubmit()}>SUBMIT</Button>
       </CardRating>
     </Container>
   );
