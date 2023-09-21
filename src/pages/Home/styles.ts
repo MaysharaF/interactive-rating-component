@@ -57,7 +57,11 @@ export const CircleIcon = styled.div`
   ${CircleCSS}
 `;
 
-export const CircleRate = styled.button`
+interface ICircleRate {
+  actived: boolean
+}
+
+export const CircleRate = styled.button<ICircleRate>`
   ${CircleCSS}
   
   cursor: pointer;
@@ -67,7 +71,21 @@ export const CircleRate = styled.button`
   font-size: 1rem;
   line-height: 24px;
   letter-spacing: 0.2px;
+
+  transition: 0.5s;
+
+  :hover {
+    color: var(--white);
+    background-color: var(--orange);
+  }
+
+  ${({ actived }) => actived && css`
+    color: var(--white);
+    background-color: var(--medium-gray);
+  `}
+    
 `;
+
 
 export const RateSelectContent = styled.div`
   display: flex;
@@ -82,4 +100,15 @@ export const Button = styled.button`
   background-color: var(--orange);
   color: var(--white);
   border-radius: 1.4063rem;
+
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: .125rem;
+
+  transition: 0.5s;
+
+  :hover {
+    color: var(--orange);
+    background-color: var(--white);
+  }
 `;

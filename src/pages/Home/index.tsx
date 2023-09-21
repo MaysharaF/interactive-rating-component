@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import StarSvg from "../../assets/svg/icon-star.svg";
 
@@ -13,6 +13,8 @@ import {
 } from "./styles";
 
 const Home: React.FC = () => {
+  const [selectedRate, setSelectedRate] = useState<number | null>(null);
+
   return (
     <Container>
       <CardRating>
@@ -31,7 +33,13 @@ const Home: React.FC = () => {
 
         <RateSelectContent>
           {Array.from({ length: 5 }, (_, index) => index + 1).map((index) => (
-            <CircleRate key={index}>{index}</CircleRate>
+            <CircleRate
+              key={index}
+              onClick={() => setSelectedRate(index)}
+              actived={selectedRate === index}
+            >
+              {index}
+            </CircleRate>
           ))}
         </RateSelectContent>
         <Button>SUBMIT</Button>
