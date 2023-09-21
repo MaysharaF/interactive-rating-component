@@ -7,7 +7,7 @@ export default createGlobalStyle`
     --medium-gray: #7C8798;
     --dark-blue: #262E38;
     --very-dark-blue: #131518;
-    --black-gradient: radial-gradient(98.96% 98.96% at 50% 0%, #232A34 0%, #181E27 100%)
+    --black-gradient: radial-gradient(98.96% 98.96% at 50% 0%, #232A34 0%, #181E27 100%);
 
     --orange: #FC7614;
   }
@@ -19,7 +19,7 @@ export default createGlobalStyle`
     box-sizing: border-box
   }
 
-   body {
+  html, body, #root {
     width: 100%;
     height: 100vh;
     background-color: var(--very-dark-blue);
@@ -30,6 +30,10 @@ export default createGlobalStyle`
   }
 
   button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
+    border: none;
   }
 `;
