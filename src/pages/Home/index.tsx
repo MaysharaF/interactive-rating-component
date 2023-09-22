@@ -63,7 +63,7 @@ const Home: React.FC = () => {
       )}
 
       {step === 2 && (
-        <CardRating role="contentinfo">
+        <CardRating>
           <ThankContent>
             <img
               src={ThankyouSvg}
