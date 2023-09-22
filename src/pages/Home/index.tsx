@@ -31,7 +31,7 @@ const Home: React.FC = () => {
   return (
     <Container role="main">
       {step === 1 && (
-        <CardRating>
+        <CardRating role="contentinfo">
           <CircleIcon>
             <img src={StarSvg} alt="Orange start icon" />
           </CircleIcon>
@@ -63,7 +63,7 @@ const Home: React.FC = () => {
       )}
 
       {step === 2 && (
-        <CardRating>
+        <CardRating role="contentinfo">
           <ThankContent>
             <img
               src={ThankyouSvg}
