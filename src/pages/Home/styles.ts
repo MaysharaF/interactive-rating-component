@@ -87,7 +87,7 @@ export const TextContent = styled.div`
   flex-direction: column;
   width: 100%;
 
-  h2 {
+  h1 {
     color: var(--white);
     font-size: 1.75rem;
     font-weight: 700;
@@ -102,7 +102,7 @@ export const TextContent = styled.div`
   }
 
   @media (width: 375px) {
-    h2{
+    h1 {
       font-size: 1.5rem;
     }
 

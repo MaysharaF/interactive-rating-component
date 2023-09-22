@@ -37,7 +37,7 @@ const Home: React.FC = () => {
           </CircleIcon>
 
           <TextContent>
-            <h2>How did we do?</h2>
+            <h1>How did we do?</h1>
 
             <p>
               Please let us know how we did with your support
@@ -73,7 +73,7 @@ const Home: React.FC = () => {
             <span>You selected {selectedRate} out of 5</span>
 
             <TextContent className="text-content-thank">
-              <h2>Thank you!</h2>
+              <h1>Thank you!</h1>
 
               <p>
                 We appreciate you taking the time to give a rating. <br />
