@@ -27,7 +27,46 @@ export const CardRating = styled.div`
     width: 20.4375rem;
     height: 22.5rem;
   }
+  
 `;
+
+export const ThankContent = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: .8125rem 0px;
+
+  img {
+    width: 10.125rem;
+    height: 6.75rem;
+  }
+
+  .text-content-thank {
+    align-items: center;
+
+    p {
+      text-align: center;
+    }
+  }
+
+  span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--dark-blue);
+    color: var(--orange);
+    
+    margin: 2rem 0rem;
+    border-radius: 1.4063rem;
+    font-weight: 400;
+    height: 2rem;
+    width: 12.0625rem;
+    
+  }
+`
 
 export const TextContent = styled.div`
   display: flex;
