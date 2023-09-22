@@ -36,7 +36,7 @@ export const ThankContent = styled.div`
   align-items: center;
   width: 100%;
   height: 100%;
-  padding: .8125rem 0px;
+  padding: .8125rem 0rem;
 
   img {
     width: 10.125rem;
@@ -49,6 +49,17 @@ export const ThankContent = styled.div`
     p {
       text-align: center;
     }
+
+    @media (width: 375px) {
+      img {
+        width: 9rem;
+        height: 6rem;
+      }
+
+      p {
+        font-size: .75rem;
+      }
+    }
   }
 
   span {
@@ -58,13 +69,16 @@ export const ThankContent = styled.div`
 
     background-color: var(--dark-blue);
     color: var(--orange);
-    
+
     margin: 2rem 0rem;
     border-radius: 1.4063rem;
     font-weight: 400;
     height: 2rem;
     width: 12.0625rem;
     
+    @media (width: 375px) {
+      padding: .3125rem .75rem;
+    }
   }
 `
 
